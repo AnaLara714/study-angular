@@ -1,0 +1,40 @@
+<div class="main">
+  <div style="width: 100%; display: flex; justify-content: center">
+    <input
+      [(ngModel)]="term"
+      class="input"
+      placeholder="Qual usuário você deseja encontrar?"
+    />
+    <button class="btn" (click)="research()">Pesquisar</button>
+  </div>
+  <div
+    *ngIf="user.login"
+    style="margin-top: 5%; width: 100%; display: flex; justify-content: center"
+  >
+    <div class="profile">
+      <img src="{{ user.avatar_url }}" class="img-profile" />
+      <span>{{ user.name }}</span>
+      <span style="font-style: italic">@{{ user.login }}</span>
+      <span>{{ user.bio }}</span>
+      <a href="{{ user.html_url }}" target="_blank">
+        <button class="btn" style="margin-top: 15px">
+          Encontrar no Github
+        </button>
+      </a>
+    </div>
+    <div class="datas">
+      <div class="lines">
+        <span>Repositórios</span>
+        <span>{{ user.public_repos }}</span>
+      </div>
+      <div class="lines">
+        <span>Seguidores</span>
+        <span>{{ user.followers }}</span>
+      </div>
+      <div class="lines">
+        <span>Seguindo</span>
+        <span>{{ user.following }}</span>
+      </div>
+    </div>
+  </div>
+</div>

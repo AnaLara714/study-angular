@@ -1,0 +1,51 @@
+.main {
+  padding: 15px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  height: 20px;
+  width: 30%;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 132px;
+  margin-left: 15px;
+  background-color: rgb(115, 255, 96);
+  color: rgb(0, 0, 65);
+  cursor: pointer;
+}
+
+.profile,
+.datas {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  row-gap: 5px;
+  font-family: "Roboto", sans-serif;
+}
+.datas {
+  width: 15%;
+}
+.img-profile {
+  border-radius: 50%;
+  width: 200px;
+  border: 3px solid rgb(169, 151, 250);
+}
+
+.lines {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
