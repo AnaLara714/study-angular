@@ -11,7 +11,7 @@
   padding: 5px;
   border: none;
   height: 20px;
-  width: 30%;
+  width: 155px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
@@ -26,17 +26,29 @@
   color: rgb(0, 0, 65);
   cursor: pointer;
 }
-
+.response {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 375px) {
+    row-gap: 15px;
+    flex-wrap: wrap;
+  }
+}
 .profile,
 .datas {
   display: flex;
-  width: 30%;
   flex-direction: column;
   row-gap: 5px;
   font-family: "Roboto", sans-serif;
 }
+
+.profile {
+  width: 270px;
+}
 .datas {
-  width: 15%;
+  width: 235px;
 }
 .img-profile {
   border-radius: 50%;
@@ -46,6 +58,7 @@
 
 .lines {
   display: flex;
+  row-gap: 15px;
   flex-direction: row;
   justify-content: space-between;
 }

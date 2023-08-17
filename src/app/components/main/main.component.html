@@ -7,10 +7,7 @@
     />
     <button class="btn" (click)="research()">Pesquisar</button>
   </div>
-  <div
-    *ngIf="user.login"
-    style="margin-top: 5%; width: 100%; display: flex; justify-content: center"
-  >
+  <div *ngIf="user.login" class="response">
     <div class="profile">
       <img src="{{ user.avatar_url }}" class="img-profile" />
       <span>{{ user.name }}</span>
